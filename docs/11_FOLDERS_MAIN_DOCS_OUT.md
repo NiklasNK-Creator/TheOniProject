@@ -51,6 +51,7 @@ D:\TheOniProject\
 - Local `D:\TheOniProject\` was NOT a git repo (no `.git`, verified 2026-09-21). Only files: PNG + new `main/docs/out/AGENTS.md`.
 - OWNER DECISION 2026-09-21 (Q-repo): `git init + remote add + pull` APPROVED. Procedure: `git init -b main`, `git remote add origin https://github.com/NiklasNK-Creator/TheOniProject.git`, `git fetch origin`, `git pull origin main --allow-unrelated-histories` (keep LICENSE), then commit scaffold + push. Do NOT force-push. Record commands + outputs when done.
 - EVIDENCE 2026-09-21 (Windows, pwsh, git 2.55.0): `git init -b main` → `Initialized empty Git repository in D:/TheOniProject/.git/`; `git remote add origin ...` + `git fetch origin` → `* [new branch] main -> origin/main`; `git pull origin main --allow-unrelated-histories` → HEAD now `0b4008f Add MIT License to the project`, `LICENSE` tracked, scaffold (`AGENTS.md`, `docs/`, `main/`, `out/`, PNG) untracked and intact. Next: `git add` + commit + push (pending owner confirm — see Q-repo-push).
+- EVIDENCE 2026-09-21 (push done, owner approved `Commit+push now`): `git add -A` staged 21 files (1168 insertions, no secrets/artifacts); commit `7b808c8` on top of `0b4008f`; `git push origin main` → `0b4008f..7b808c8 main -> main`. Working tree clean. No force-push. Commit identity passed via one-shot `-c` flags (repo `user.name/email` config left untouched — set it locally if you want future commits without flags).
 
 ## 4. How to add code correctly (when approved)
 
