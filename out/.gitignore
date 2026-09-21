@@ -1,0 +1,9 @@
+# out/.gitignore — keep generated outputs local by default
+
+# Ignore everything in out/ ...
+*
+# ... except these intentional files:
+!.gitignore
+!README.md
+# Uncomment with owner approval to commit templates:
+# !repro/TEMPLATE.md
